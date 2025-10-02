@@ -82,7 +82,7 @@ CREATE TABLE IF NOT EXISTS respostas (
 -- ========================
 CREATE TABLE IF NOT EXISTS niveis_dificuldade (
     id INT PRIMARY KEY,
-    nome VARCHAR(50) NOT NULL UNIQUE,
+    nivel VARCHAR(50) NOT NULL UNIQUE,
     peso DECIMAL(5, 2) NOT NULL
 );
 
@@ -115,19 +115,19 @@ INSERT INTO professores (nome, email, telefone, foto_url, linguas, texto, link) 
 INSERT INTO usuarios (nome, email, aceita_contato) VALUES
 ('Maria Souza', 'maria@teste.com', TRUE);
 
-INSERT INTO niveis_dificuldade (id, nome, peso) VALUES
+INSERT INTO niveis_dificuldade (id, nivel, peso) VALUES
 ('1', 'Básico', '0.1');
 
-INSERT INTO niveis_dificuldade (id, nome, peso) VALUES
+INSERT INTO niveis_dificuldade (id, nivel, peso) VALUES
 ('2', 'Intermediário', '0.25');
 
-INSERT INTO niveis_dificuldade (id, nome, peso) VALUES
+INSERT INTO niveis_dificuldade (id, nivel, peso) VALUES
 ('3', 'Intermediário Superior', '0.4');
 
-INSERT INTO niveis_dificuldade (id, nome, peso) VALUES
+INSERT INTO niveis_dificuldade (id, nivel, peso) VALUES
 ('4', 'Avançado', '0.6');
 
-INSERT INTO niveis_dificuldade (id, nome, peso) VALUES
+INSERT INTO niveis_dificuldade (id, nivel, peso) VALUES
 ('5', 'Avançado Superior', '0.8');
 
 
